@@ -1,0 +1,23 @@
+{
+  "CC-004": {
+    "occurrences": 13,
+    "confidence": 1,
+    "mastered_explicitly": false,
+    "first_seen": "2026-08-28T20:43:16.510Z",
+    "last_seen": "2026-08-29T13:58:00.087Z"
+  },
+  "CC-001": {
+    "occurrences": 26,
+    "confidence": 1,
+    "mastered_explicitly": false,
+    "first_seen": "2026-08-28T20:43:16.514Z",
+    "last_seen": "2026-08-29T13:58:00.092Z"
+  },
+  "CSS-002": {
+    "occurrences": 278,
+    "confidence": 1,
+    "mastered_explicitly": false,
+    "first_seen": "2026-08-28T20:44:52.118Z",
+    "last_seen": "2026-08-29T13:58:00.151Z"
+  }
+}

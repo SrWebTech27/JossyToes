@@ -1,0 +1,28 @@
+.ticker {
+  overflow: hidden;
+  padding: 18px 0;
+}
+
+.ticker-track {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  animation: ticker-roll 18s linear infinite;
+}
+
+.ticker i {
+  font-style: normal;
+  color: var(--coral);
+  font-size: 17px;
+}
+
+@keyframes ticker-roll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 760px) {
+  .ticker { padding: 15px 0; }
+  .ticker-track { gap: 19px; animation-duration: 14s; }
+}
