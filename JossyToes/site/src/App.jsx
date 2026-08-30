@@ -2,12 +2,12 @@ import { ArrowUpRight, Clock3, HeartPulse, MapPin, Menu, ShieldCheck, Sparkles, 
 import { FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa'
 import { useState } from 'react'
 import './App.css'
-import corteCorrecto from '../../Categoria/cortescorrectodeuñas.jpg'
-import callosDurezas from '../../Categoria/eliminaciondecallosyduraezas.jpg'
-import extraccionUniero from '../../Categoria/extracciódeuñero.jpg'
-import limpieza from '../../Categoria/limpuezaprogundaydesinfeccion.jpg'
-import pieDiabetico from '../../Categoria/piediabetico.jpg'
-import hongos from '../../Categoria/tratamientodehongosenuñas.jpg'
+import corteCorrecto from './assets/categoria/cortescorrectodeuñas.jpeg'
+import callosDurezas from './assets/categoria/eliminaciondecallosyduraezas.jpeg'
+import extraccionUniero from './assets/categoria/extracciódeuñero.jpeg'
+import limpieza from './assets/categoria/limpuezaprogundaydesinfeccion.jpeg'
+import pieDiabetico from './assets/categoria/piediabetico.jpeg'
+import hongos from './assets/categoria/tratamientodehongosenuñas.jpeg'
 
 const services = [
   { icon: '01', title: 'Corte correcto de uñas', text: 'Previene molestias y mantiene tus uñas sanas.' },
