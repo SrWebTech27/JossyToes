@@ -1,13 +1,13 @@
 import { ArrowUpRight, Clock3, HeartPulse, MapPin, Menu, ShieldCheck, Sparkles, X } from 'lucide-react'
 import { FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa'
 import { useState } from 'react'
-import './App.css'
-import corteCorrecto from './assets/categoria/cortescorrectodeuñas.jpeg'
-import callosDurezas from './assets/categoria/eliminaciondecallosyduraezas.jpeg'
-import extraccionUniero from './assets/categoria/extracciódeuñero.jpeg'
-import limpieza from './assets/categoria/limpuezaprogundaydesinfeccion.jpeg'
-import pieDiabetico from './assets/categoria/piediabetico.jpeg'
-import hongos from './assets/categoria/tratamientodehongosenuñas.jpeg'
+import './styles/app.css'
+import corteCorrecto from './assets/images/categories/cortescorrectodeuñas.jpeg'
+import callosDurezas from './assets/images/categories/eliminaciondecallosyduraezas.jpeg'
+import extraccionUniero from './assets/images/categories/extracciódeuñero.jpeg'
+import limpieza from './assets/images/categories/limpuezaprogundaydesinfeccion.jpeg'
+import pieDiabetico from './assets/images/categories/piediabetico.jpeg'
+import hongos from './assets/images/categories/tratamientodehongosenuñas.jpeg'
 
 const services = [
   { icon: '01', title: 'Corte correcto de uñas', text: 'Previene molestias y mantiene tus uñas sanas.' },
@@ -44,7 +44,7 @@ function App() {
     <div className="site-shell">
       <header className="nav-wrap">
         <a className="brand" href="#inicio" aria-label="JossyToes, inicio">
-          <span className="brand-mark"><img src="/logo.jpeg" alt="" /></span>
+          <span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span>
           <span><strong>JOSSY</strong><b>TOES</b></span>
         </a>
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
@@ -69,7 +69,7 @@ function App() {
           <div className="hero-art">
             <div className="art-ring ring-one"></div><div className="art-ring ring-two"></div>
             <div className="art-label label-top">Pies sanos<br /><strong>vida activa</strong></div>
-            <img src="/logo.jpeg" alt="Logo de JossyToes Centro Podológico" />
+            <img src="/brand/logo.jpeg" alt="Logo de JossyToes Centro Podológico" />
             <div className="art-label label-bottom"><span>01</span> Cuidado integral</div>
           </div>
         </section>
@@ -112,14 +112,14 @@ function App() {
         </section>
 
         <section className="trust section" id="nosotros">
-          <div className="trust-visual"><div className="trust-circle"><img src="/logo.jpeg" alt="JossyToes" /></div><span className="stamp">CUIDADO<br />CON<br />PROPÓSITO</span></div>
+          <div className="trust-visual"><div className="trust-circle"><img src="/brand/logo.jpeg" alt="JossyToes" /></div><span className="stamp">CUIDADO<br />CON<br />PROPÓSITO</span></div>
           <div className="trust-copy"><p className="eyebrow"><span></span> Tu tranquilidad, primero</p><h2>Un espacio para<br /><em>volver a confiar.</em></h2><p className="section-intro">Somos especialistas dedicados al cuidado integral de tus pies. Trabajamos con precisión, calidez y protocolos que te hacen sentir en buenas manos.</p><div className="benefits">{benefits.map(({ icon: Icon, title, text }) => <div className="benefit" key={title}><Icon size={22} /><div><h3>{title}</h3><p>{text}</p></div></div>)}</div><a className="text-link dark-link" href={whatsappUrl} target="_blank" rel="noreferrer">Conoce nuestra atención <ArrowUpRight size={17} /></a></div>
         </section>
 
         <section className="contact section" id="contacto"><div><p className="eyebrow"><span></span> Tu próximo paso</p><h2>Regálale a tus pies<br /><em>un buen día.</em></h2></div><div className="contact-side"><p>Agenda tu evaluación con <strong>Joselin E. Guevara Roca</strong>, Podóloga Especialista.</p><a className="primary-btn light-btn" href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowUpRight size={18} /></a><div className="contact-meta"><a href={mapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Calle Porta 170, Oficina 301<br />Miraflores</span></a><span><Clock3 size={17} /> Lun — Sáb<br />10:00 AM — 7:00 PM</span></div></div></section>
       </main>
-      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="/logo.jpeg" alt="" /></span><span><strong>JOSSY</strong><b>TOES</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a href={whatsappUrl} target="_blank" rel="noreferrer">933 447 780</a></footer>
-      <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp"><img src="/icono.jpeg" alt="WhatsApp" /></a>
+      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span><span><strong>JOSSY</strong><b>TOES</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a href={whatsappUrl} target="_blank" rel="noreferrer">933 447 780</a></footer>
+      <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp"><img src="/icons/icono.jpeg" alt="WhatsApp" /></a>
     </div>
   )
 }

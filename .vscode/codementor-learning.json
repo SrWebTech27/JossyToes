@@ -1,17 +1,17 @@
 {
   "CC-004": {
-    "occurrences": 15,
+    "occurrences": 18,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-28T20:43:16.510Z",
-    "last_seen": "2026-08-30T04:01:43.960Z"
+    "last_seen": "2026-08-30T16:32:19.359Z"
   },
   "CC-001": {
-    "occurrences": 30,
+    "occurrences": 36,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-28T20:43:16.514Z",
-    "last_seen": "2026-08-30T04:01:43.962Z"
+    "last_seen": "2026-08-30T16:32:19.361Z"
   },
   "CSS-002": {
     "occurrences": 278,
