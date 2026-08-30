@@ -48,7 +48,7 @@ function App() {
           <span><strong>JOSSY</strong><b>TOES</b></span>
         </a>
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
-          <a href="#servicios" onClick={() => setMenuOpen(false)}>Servicios</a>
+          <a href="#servicios" onClick={() => setMenuOpen(false)}>Servicioselian</a>
           <a href="#catalogo" onClick={() => setMenuOpen(false)}>Catálogo</a>
           <a href="#nosotros" onClick={() => setMenuOpen(false)}>Por qué elegirnos</a>
           <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
