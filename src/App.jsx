@@ -39,7 +39,7 @@ function App() {
   const facebookUrl = 'https://www.facebook.com/share/18oJ3DsRwq/'
   const instagramUrl = 'https://www.instagram.com/jossytoes/'
   const tiktokUrl = 'https://www.tiktok.com/@podologiajossytoes?_r=1&_t=ZS-99IXRn0Wv4C'
-  const mapsUrl = 'https://maps.app.goo.gl/b7vnd5LCLQ4n9aAw6'
+  const mapsUrl = 'https://maps.app.goo.gl/ZDUpwChatBAQy7NF8'
 
   return (
     <div className="site-shell">
@@ -49,7 +49,7 @@ function App() {
           <span><strong>JOSSY</strong><b>TOES</b></span>
         </a>
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
-          <a href="#servicios" onClick={() => setMenuOpen(false)}>Serviciospaol</a>
+          <a href="#servicios" onClick={() => setMenuOpen(false)}>Serviciosp</a>
           <a href="#catalogo" onClick={() => setMenuOpen(false)}>Catálogo</a>
           <a href="#nosotros" onClick={() => setMenuOpen(false)}>Por qué elegirnos</a>
           <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
