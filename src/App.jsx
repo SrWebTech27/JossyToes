@@ -1,5 +1,5 @@
 import { ArrowUpRight, Clock3, HeartPulse, MapPin, Menu, ShieldCheck, Sparkles, X } from 'lucide-react'
-import { FaFacebookF, FaTiktok, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa'
 import { useState } from 'react'
 import './styles/app.css'
 import corteCorrecto from './assets/images/categories/cortescorrectodeuñas.jpeg'
@@ -37,6 +37,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const whatsappUrl = 'https://wa.me/51933447780?text=Hola%20JossyToes%2C%20quiero%20agendar%20una%20cita.'
   const facebookUrl = 'https://www.facebook.com/share/18oJ3DsRwq/'
+  const instagramUrl = 'https://www.instagram.com/jossytoes/'
   const tiktokUrl = 'https://www.tiktok.com/@podologiajossytoes?_r=1&_t=ZS-99IXRn0Wv4C'
   const mapsUrl = 'https://maps.app.goo.gl/b7vnd5LCLQ4n9aAw6'
 
@@ -118,7 +119,7 @@ function App() {
 
         <section className="contact section" id="contacto"><div><p className="eyebrow"><span></span> Tu próximo paso</p><h2>Regálale a tus pies<br /><em>un buen día.</em></h2></div><div className="contact-side"><p>Agenda tu evaluación con <strong>Joselin E. Guevara Roca</strong>, Podóloga Especialista.</p><a className="primary-btn light-btn" href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowUpRight size={18} /></a><div className="contact-meta"><a href={mapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Calle Porta 170, Oficina 301<br />Miraflores</span></a><span><Clock3 size={17} /> Lun — Sáb<br />10:00 AM — 7:00 PM</span></div></div></section>
       </main>
-      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span><span><strong>JOSSY</strong><b>TOES</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a href={whatsappUrl} target="_blank" rel="noreferrer">933 447 780</a></footer>
+      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span><span><strong>JOSSY</strong><b>TOES</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social instagram" href={instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram"><FaInstagram /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a href={whatsappUrl} target="_blank" rel="noreferrer">933 447 780</a></footer>
       <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp"><img src="/icons/icono.jpeg" alt="WhatsApp" /></a>
     </div>
   )
