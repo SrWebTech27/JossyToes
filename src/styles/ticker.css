@@ -7,8 +7,14 @@
   width: max-content;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 0;
   animation: ticker-roll 18s linear infinite;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .ticker i {
@@ -24,5 +30,6 @@
 
 @media (max-width: 760px) {
   .ticker { padding: 15px 0; }
-  .ticker-track { gap: 19px; animation-duration: 14s; }
+  .ticker-item { gap: 19px; }
+  .ticker-track { animation-duration: 14s; }
 }

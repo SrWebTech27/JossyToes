@@ -24,6 +24,15 @@ const benefits = [
   { icon: Sparkles, title: 'Tecnología avanzada', text: 'Procedimientos modernos, rápidos y sin dolor.' },
 ]
 
+const tickerItems = [
+  'Atención podológica especializada',
+  'Camina sin dolor',
+  'Pies sanos, vida activa',
+  'Prevención y bienestar',
+  'Cuidado profesional para tus pies',
+  'Agenda tu cita hoy',
+]
+
 const catalogItems = [
   { badge: 'Más pedido', title: 'Corte correcto de uñas', text: 'Limpieza, forma y cuidado para mantener tus uñas sanas y cómodas.', image: corteCorrecto },
   { badge: 'Popular', title: 'Eliminación de callos y durezas', text: 'Alivio inmediato y sensación de suavidad con un tratamiento profesional.', image: callosDurezas },
@@ -39,7 +48,8 @@ function App() {
   const facebookUrl = 'https://www.facebook.com/share/18oJ3DsRwq/'
   const instagramUrl = 'https://www.instagram.com/jossytoes/'
   const tiktokUrl = 'https://www.tiktok.com/@podologiajossytoes?_r=1&_t=ZS-99IXRn0Wv4C'
-  const mapsUrl = 'https://maps.app.goo.gl/ZDUpwChatBAQy7NF8'
+  const mapsUrl = 'https://maps.app.goo.gl/b7vnd5LCLQ4n9aAw6'
+  const additionalMapsUrl = 'https://maps.app.goo.gl/ZDUpwChatBAQy7NF8'
 
   return (
     <div className="site-shell">
@@ -75,7 +85,7 @@ function App() {
           </div>
         </section>
 
-        <section className="ticker"><div className="ticker-track"><span>Camina sin dolor</span><i>✳</i><span>luce unos pies saludables</span><i>✳</i><span>Camina sin dolor</span><i>✳</i><span>luce unos pies saludables</span><i>✳</i><span>Camina sin dolor</span><i>✳</i><span>luce unos pies saludables</span><i>✳</i></div></section>
+        <section className="ticker" aria-label="Mensajes de JossyToes"><div className="ticker-track">{[...tickerItems, ...tickerItems].map((item, index) => <span className="ticker-item" key={`${item}-${index}`}>{item}<i>✳</i></span>)}</div></section>
 
         <section className="services section" id="servicios">
           <div className="section-heading"><div><p className="eyebrow"><span></span> Lo que hacemos</p><h2>Soluciones para<br /><em>cada paso.</em></h2></div><p className="section-intro">Tu salud merece más que una solución rápida. En JossyToes evaluamos, cuidamos y acompañamos cada proceso.</p></div>
@@ -117,9 +127,9 @@ function App() {
           <div className="trust-copy"><p className="eyebrow"><span></span> Tu tranquilidad, primero</p><h2>Un espacio para<br /><em>volver a confiar.</em></h2><p className="section-intro">Somos especialistas dedicados al cuidado integral de tus pies. Trabajamos con precisión, calidez y protocolos que te hacen sentir en buenas manos.</p><div className="benefits">{benefits.map(({ icon: Icon, title, text }) => <div className="benefit" key={title}><Icon size={22} /><div><h3>{title}</h3><p>{text}</p></div></div>)}</div><a className="text-link dark-link" href={whatsappUrl} target="_blank" rel="noreferrer">Conoce nuestra atención <ArrowUpRight size={17} /></a></div>
         </section>
 
-        <section className="contact section" id="contacto"><div><p className="eyebrow"><span></span> Tu próximo paso</p><h2>Regálale a tus pies<br /><em>un buen día.</em></h2></div><div className="contact-side"><p>Agenda tu evaluación con <strong>Joselin E. Guevara Roca</strong>, Podóloga Especialista.</p><a className="primary-btn light-btn" href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowUpRight size={18} /></a><div className="contact-meta"><a href={mapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Calle Porta 170, Oficina 301<br />Miraflores</span></a><span><Clock3 size={17} /> Lun — Sáb<br />10:00 AM — 7:00 PM</span></div></div></section>
+        <section className="contact section" id="contacto"><div><p className="eyebrow"><span></span> Tu próximo paso</p><h2>Regálale a tus pies<br /><em>un buen día.</em></h2></div><div className="contact-side"><p>Agenda tu evaluación con <strong>Joselin E. Guevara Roca</strong>, Podóloga Especialista.</p><a className="primary-btn light-btn" href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowUpRight size={18} /></a><div className="contact-meta"><a href={mapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Calle Porta 170, Oficina 301<br />Miraflores</span></a><a href={additionalMapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Q3M7+CJP Villa EL Salvador</span></a><span><Clock3 size={17} /> Lun — Sáb<br />10:00 AM — 7:00 PM</span></div></div></section>
       </main>
-      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span><span><strong>JOSSY</strong><b>TOES</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social instagram" href={instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram"><FaInstagram /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a href={whatsappUrl} target="_blank" rel="noreferrer">933 447 780</a></footer>
+      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span><span><strong>JOSSY</strong><b>TOES</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social instagram" href={instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram"><FaInstagram /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a className="footer-phone" href={whatsappUrl} target="_blank" rel="noreferrer">933 447 780</a><p className="copyright">© 2026 Jossy Toes · Todos los derechos reservados · Diseñado por <a href="https://linktr.ee/SrWebTech" target="_blank" rel="noreferrer">SrWebTech</a></p></footer>
       <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp"><img src="/icons/icono.jpeg" alt="WhatsApp" /></a>
     </div>
   )
