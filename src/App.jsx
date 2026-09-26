@@ -44,19 +44,19 @@ const catalogItems = [
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const whatsappUrl = 'https://wa.me/51933447780?text=Hola%20JossyToes%2C%20quiero%20agendar%20una%20cita.'
-  const facebookUrl = 'https://www.facebook.com/share/18oJ3DsRwq/'
-  const instagramUrl = 'https://www.instagram.com/jossytoes/'
-  const tiktokUrl = 'https://www.tiktok.com/@podologiajossytoes?_r=1&_t=ZS-99IXRn0Wv4C'
-  const mapsUrl = 'https://maps.app.goo.gl/b7vnd5LCLQ4n9aAw6'
-  const additionalMapsUrl = 'https://maps.app.goo.gl/ZDUpwChatBAQy7NF8'
+  const whatsappUrl = 'https://api.whatsapp.com/send/?phone=51923985788&text=Hola+Podologia%20integral%20Guevara%2C+quiero+agendar+una+cita.&type=phone_number&app_absent=0'
+  const facebookUrl = 'https://www.facebook.com/PodologiaintegralGuevara'
+  const instagramUrl = 'https://www.instagram.com/podologiaintegralguevara/'
+  const tiktokUrl = 'https://www.tiktok.com/@podologiaintegralguevara'
+  const mapsUrl = 'https://www.google.com/maps/place/Calle+Porta+170,+Lima+15074/@-12.1235,-77.0315,17z/data=!4m6!3m5!1s0x9105c818c3964bb7:0x5c4960f084d9b219!8m2!3d-12.1234735!4d-77.0314744!16s%2Fg%2F11y07nnscp?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D'
+  const additionalMapsUrl = 'https://www.google.com/maps/place/12%C2%B012%2759.1%22S+76%C2%B056%2709.3%22W/@-12.2163906,-76.9359358,3a,75y,145.48h,90t/data=!3m7!1e1!3m5!1sV88n8oyOTRXZs7r7EGjZXA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DV88n8oyOTRXZs7r7EGjZXA%26yaw%3D145.47723!7i16384!8i8192!4m4!3m3!8m2!3d-12.2164167!4d-76.9359167!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D'
 
   return (
     <div className="site-shell">
       <header className="nav-wrap">
-        <a className="brand" href="#inicio" aria-label="JossyToes, inicio">
-          <span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span>
-          <span><strong>JOSSY</strong><b>TOES</b></span>
+        <a className="brand" href="#inicio" aria-label="Podología Integral Guevara, inicio">
+          <span className="brand-mark"><img src="./brand/logo.jpeg" alt="" /></span>
+          <span><strong>PODOLOGÍA</strong><b> INTEGRAL GUEVARA</b></span>
         </a>
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
           <a href="#servicios" onClick={() => setMenuOpen(false)}>Servicios</a>
@@ -80,15 +80,15 @@ function App() {
           <div className="hero-art">
             <div className="art-ring ring-one"></div><div className="art-ring ring-two"></div>
             <div className="art-label label-top">Pies sanos<br /><strong>vida activa</strong></div>
-            <img src="/brand/logo.jpeg" alt="Logo de JossyToes Centro Podológico" />
+            <img src="./brand/logo.jpeg" alt="Logo de Podología Integral Guevara" />
             <div className="art-label label-bottom"><span>01</span> Cuidado integral</div>
           </div>
         </section>
 
-        <section className="ticker" aria-label="Mensajes de JossyToes"><div className="ticker-track">{[...tickerItems, ...tickerItems].map((item, index) => <span className="ticker-item" key={`${item}-${index}`}>{item}<i>✳</i></span>)}</div></section>
+        <section className="ticker" aria-label="Mensajes de Podología Integral Guevara"><div className="ticker-track">{[...tickerItems, ...tickerItems].map((item, index) => <span className="ticker-item" key={`${item}-${index}`}>{item}<i>✳</i></span>)}</div></section>
 
         <section className="services section" id="servicios">
-          <div className="section-heading"><div><p className="eyebrow"><span></span> Lo que hacemos</p><h2>Soluciones para<br /><em>cada paso.</em></h2></div><p className="section-intro">Tu salud merece más que una solución rápida. En JossyToes evaluamos, cuidamos y acompañamos cada proceso.</p></div>
+          <div className="section-heading"><div><p className="eyebrow"><span></span> Lo que hacemos</p><h2>Soluciones para<br /><em>cada paso.</em></h2></div><p className="section-intro">Tu salud merece más que una solución rápida. En Podología Integral Guevara evaluamos, cuidamos y acompañamos cada proceso.</p></div>
           <div className="service-grid">{services.map((service, index) => <article className={`service-card card-${index + 1}`} key={service.title}><span className="service-number">{service.icon}</span><div><h3>{service.title}</h3><p>{service.text}</p></div><ArrowUpRight className="service-arrow" size={22} /></article>)}</div>
         </section>
 
@@ -123,14 +123,14 @@ function App() {
         </section>
 
         <section className="trust section" id="nosotros">
-          <div className="trust-visual"><div className="trust-circle"><img src="/brand/logo.jpeg" alt="JossyToes" /></div><span className="stamp">CUIDADO<br />CON<br />PROPÓSITO</span></div>
+          <div className="trust-visual"><div className="trust-circle"><img src="./brand/logo.jpeg" alt="Podología Integral Guevara" /></div><span className="stamp">CUIDADO<br />CON<br />PROPÓSITO</span></div>
           <div className="trust-copy"><p className="eyebrow"><span></span> Tu tranquilidad, primero</p><h2>Un espacio para<br /><em>volver a confiar.</em></h2><p className="section-intro">Somos especialistas dedicados al cuidado integral de tus pies. Trabajamos con precisión, calidez y protocolos que te hacen sentir en buenas manos.</p><div className="benefits">{benefits.map(({ icon: Icon, title, text }) => <div className="benefit" key={title}><Icon size={22} /><div><h3>{title}</h3><p>{text}</p></div></div>)}</div><a className="text-link dark-link" href={whatsappUrl} target="_blank" rel="noreferrer">Conoce nuestra atención <ArrowUpRight size={17} /></a></div>
         </section>
 
-        <section className="contact section" id="contacto"><div><p className="eyebrow"><span></span> Tu próximo paso</p><h2>Regálale a tus pies<br /><em>un buen día.</em></h2></div><div className="contact-side"><p>Agenda tu evaluación con <strong>Joselin E. Guevara Roca</strong>, Podóloga Especialista.</p><a className="primary-btn light-btn" href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowUpRight size={18} /></a><div className="contact-meta"><a href={mapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Calle Porta 170, Oficina 301<br />Miraflores</span></a><a href={additionalMapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Q3M7+CJP Villa EL Salvador</span></a><span><Clock3 size={17} /> Lun — Sáb<br />10:00 AM — 7:00 PM</span></div></div></section>
+        <section className="contact section" id="contacto"><div><p className="eyebrow"><span></span> Tu próximo paso</p><h2>Regálale a tus pies<br /><em>un buen día.</em></h2></div><div className="contact-side"><p>Agenda tu evaluación con <strong>Joselin E. Guevara Roca</strong>, Podóloga Especialista.</p><a className="primary-btn light-btn" href={whatsappUrl} target="_blank" rel="noreferrer">Escribir por WhatsApp <ArrowUpRight size={18} /></a><div className="contact-meta"><a href={mapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Calle Porta 170, Oficina 301<br />Miraflores</span></a><a href={additionalMapsUrl} target="_blank" rel="noreferrer" className="map-link"><span><MapPin size={17} /> Villa El Salvador<br />12°12′59.1″ S, 76°56′09.3″ W</span></a><span><Clock3 size={17} /> Lun — Sáb<br />10:00 AM — 7:00 PM</span></div></div></section>
       </main>
-      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="/brand/logo.jpeg" alt="" /></span><span><strong>JOSSY</strong><b>TOES</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social instagram" href={instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram"><FaInstagram /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a className="footer-phone" href={whatsappUrl} target="_blank" rel="noreferrer">933 447 780</a><p className="copyright">© 2026 Jossy Toes · Todos los derechos reservados · Diseñado por <a href="https://linktr.ee/SrWebTech" target="_blank" rel="noreferrer">SrWebTech</a></p></footer>
-      <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp"><img src="/icons/icono.jpeg" alt="WhatsApp" /></a>
+      <footer><a className="brand" href="#inicio"><span className="brand-mark"><img src="./brand/logo.jpeg" alt="" /></span><span><strong>PODOLOGÍA</strong><b> INTEGRAL GUEVARA</b></span></a><p>Centro Podológico · Miraflores</p><div className="social-links"><a className="social whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" title="WhatsApp"><FaWhatsapp /></a><a className="social facebook" href={facebookUrl} target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook"><FaFacebookF /></a><a className="social instagram" href={instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram"><FaInstagram /></a><a className="social tiktok" href={tiktokUrl} target="_blank" rel="noreferrer" aria-label="TikTok" title="TikTok"><FaTiktok /></a></div><a className="footer-phone" href={whatsappUrl} target="_blank" rel="noreferrer">923 985 788</a><p className="copyright">© 2026 Podología Integral Guevara · Todos los derechos reservados · Diseñado por <a href="https://linktr.ee/SrWebTech" target="_blank" rel="noreferrer">SrWebTech</a></p></footer>
+      <a className="floating-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp"><img src="./icons/icono.jpeg" alt="WhatsApp" /></a>
     </div>
   )
 }
